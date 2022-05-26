@@ -12,7 +12,7 @@
         <!--메모-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OunwanApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MemoViewController" customModule="OunwanApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,7 +51,7 @@
         <!--계산기-->
         <scene sceneID="GCk-SP-vga">
             <objects>
-                <viewController id="v6x-aE-MkJ" sceneMemberID="viewController">
+                <viewController id="v6x-aE-MkJ" customClass="CalculatorViewController" customModule="OunwanApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yfi-xL-hbv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -67,7 +67,7 @@
         <!--비디오-->
         <scene sceneID="X94-C9-6qV">
             <objects>
-                <viewController id="vRz-Q6-7h9" sceneMemberID="viewController">
+                <viewController id="vRz-Q6-7h9" customClass="VideoViewController" customModule="OunwanApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nh1-uh-ApN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -83,14 +83,14 @@
         <!--설정-->
         <scene sceneID="NTJ-g1-iT8">
             <objects>
-                <viewController id="F8F-Q9-IdG" sceneMemberID="viewController">
+                <viewController id="F8F-Q9-IdG" customClass="SettingViewController" customModule="OunwanApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vdb-XU-8sR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="NQa-RD-ofW"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="설정" image="swift" catalog="system" id="tSz-VG-R80"/>
+                    <tabBarItem key="tabBarItem" title="설정" image="gearshape" catalog="system" id="tSz-VG-R80"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xy4-Wg-dJv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -98,10 +98,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="play.rectangle" catalog="system" width="128" height="93"/>
         <image name="plus.forwardslash.minus" catalog="system" width="128" height="115"/>
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>
-        <image name="swift" catalog="system" width="128" height="113"/>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

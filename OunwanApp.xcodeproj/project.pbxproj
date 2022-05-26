@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		85052C6E283FBB640075B259 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85052C6D283FBB640075B259 /* AppDelegate.swift */; };
 		85052C70283FBB640075B259 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85052C6F283FBB640075B259 /* SceneDelegate.swift */; };
-		85052C72283FBB640075B259 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85052C71283FBB640075B259 /* ViewController.swift */; };
 		85052C75283FBB640075B259 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85052C73283FBB640075B259 /* Main.storyboard */; };
 		85052C77283FBB650075B259 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85052C76283FBB650075B259 /* Assets.xcassets */; };
 		85052C7A283FBB650075B259 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85052C78283FBB650075B259 /* LaunchScreen.storyboard */; };
+		85052C82283FC44C0075B259 /* MemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85052C81283FC44C0075B259 /* MemoViewController.swift */; };
+		85052C85283FC4BB0075B259 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85052C84283FC4BB0075B259 /* CalculatorViewController.swift */; };
+		85052C87283FC50B0075B259 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85052C86283FC50B0075B259 /* VideoViewController.swift */; };
+		85052C89283FC51E0075B259 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85052C88283FC51E0075B259 /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		85052C6A283FBB640075B259 /* OunwanApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OunwanApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85052C6D283FBB640075B259 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85052C6F283FBB640075B259 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		85052C71283FBB640075B259 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		85052C74283FBB640075B259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85052C76283FBB650075B259 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85052C79283FBB650075B259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85052C7B283FBB650075B259 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85052C81283FC44C0075B259 /* MemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoViewController.swift; sourceTree = "<group>"; };
+		85052C84283FC4BB0075B259 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		85052C86283FC50B0075B259 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		85052C88283FC51E0075B259 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,26 @@
 		85052C6C283FBB640075B259 /* OunwanApp */ = {
 			isa = PBXGroup;
 			children = (
+				85052C83283FC45E0075B259 /* Controller */,
 				85052C6D283FBB640075B259 /* AppDelegate.swift */,
 				85052C6F283FBB640075B259 /* SceneDelegate.swift */,
-				85052C71283FBB640075B259 /* ViewController.swift */,
 				85052C73283FBB640075B259 /* Main.storyboard */,
 				85052C76283FBB650075B259 /* Assets.xcassets */,
 				85052C78283FBB650075B259 /* LaunchScreen.storyboard */,
 				85052C7B283FBB650075B259 /* Info.plist */,
 			);
 			path = OunwanApp;
+			sourceTree = "<group>";
+		};
+		85052C83283FC45E0075B259 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				85052C81283FC44C0075B259 /* MemoViewController.swift */,
+				85052C84283FC4BB0075B259 /* CalculatorViewController.swift */,
+				85052C86283FC50B0075B259 /* VideoViewController.swift */,
+				85052C88283FC51E0075B259 /* SettingViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85052C72283FBB640075B259 /* ViewController.swift in Sources */,
+				85052C82283FC44C0075B259 /* MemoViewController.swift in Sources */,
 				85052C6E283FBB640075B259 /* AppDelegate.swift in Sources */,
+				85052C85283FC4BB0075B259 /* CalculatorViewController.swift in Sources */,
+				85052C87283FC50B0075B259 /* VideoViewController.swift in Sources */,
 				85052C70283FBB640075B259 /* SceneDelegate.swift in Sources */,
+				85052C89283FC51E0075B259 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
