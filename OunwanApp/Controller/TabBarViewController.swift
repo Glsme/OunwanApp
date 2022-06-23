@@ -1,13 +1,13 @@
 //
-//  TabViewController.swift
+//  TabBarViewController.swift
 //  OunwanApp
 //
-//  Created by Seokjune Hong on 2022/05/27.
+//  Created by Seokjune Hong on 2022/05/28.
 //
 
 import UIKit
 
-class TabViewController: UITabBarController {
+class TabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

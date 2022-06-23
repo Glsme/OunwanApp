@@ -16,6 +16,8 @@
 		85052C85283FC4BB0075B259 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85052C84283FC4BB0075B259 /* CalculatorViewController.swift */; };
 		85052C87283FC50B0075B259 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85052C86283FC50B0075B259 /* VideoViewController.swift */; };
 		85052C89283FC51E0075B259 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85052C88283FC51E0075B259 /* SettingViewController.swift */; };
+		853DD0872842508600B6825A /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853DD0862842508600B6825A /* TabBarViewController.swift */; };
+		85A7B29B2848EC4000175744 /* MemoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A7B29A2848EC4000175744 /* MemoPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		85052C84283FC4BB0075B259 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		85052C86283FC50B0075B259 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		85052C88283FC51E0075B259 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		853DD0862842508600B6825A /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		85A7B29A2848EC4000175744 /* MemoPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +81,11 @@
 			isa = PBXGroup;
 			children = (
 				85052C81283FC44C0075B259 /* MemoViewController.swift */,
+				85A7B29A2848EC4000175744 /* MemoPageViewController.swift */,
 				85052C84283FC4BB0075B259 /* CalculatorViewController.swift */,
 				85052C86283FC50B0075B259 /* VideoViewController.swift */,
 				85052C88283FC51E0075B259 /* SettingViewController.swift */,
+				853DD0862842508600B6825A /* TabBarViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -156,9 +162,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				85052C82283FC44C0075B259 /* MemoViewController.swift in Sources */,
+				85A7B29B2848EC4000175744 /* MemoPageViewController.swift in Sources */,
 				85052C6E283FBB640075B259 /* AppDelegate.swift in Sources */,
 				85052C85283FC4BB0075B259 /* CalculatorViewController.swift in Sources */,
 				85052C87283FC50B0075B259 /* VideoViewController.swift in Sources */,
+				853DD0872842508600B6825A /* TabBarViewController.swift in Sources */,
 				85052C70283FBB640075B259 /* SceneDelegate.swift in Sources */,
 				85052C89283FC51E0075B259 /* SettingViewController.swift in Sources */,
 			);
