@@ -57,7 +57,7 @@
             </objects>
             <point key="canvasLocation" x="1025" y="424"/>
         </scene>
-        <!--Memo View Controller-->
+        <!--운동 기록-->
         <scene sceneID="wWQ-ta-lB9">
             <objects>
                 <viewController id="NCD-4w-t2A" customClass="MemoViewController" customModule="OunwanApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -68,6 +68,15 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uNH-jm-gXU" customClass="FSCalendar">
                                 <rect key="frame" x="20" y="108" width="374" height="358.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="headerDateFormat" value="yyyy년 M월"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="eventSelectionColor">
+                                        <color key="value" systemColor="systemPinkColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="eventDefaultColor">
+                                        <color key="value" systemColor="systemYellowColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ULw-MN-CN2"/>
@@ -80,11 +89,37 @@
                             <constraint firstItem="uNH-jm-gXU" firstAttribute="centerX" secondItem="YE4-2l-lCQ" secondAttribute="centerX" id="wRt-e7-ikQ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="eLr-hd-9Qu"/>
+                    <navigationItem key="navigationItem" title="운동 기록" id="eLr-hd-9Qu">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="PKT-oA-0Y6">
+                            <color key="tintColor" systemColor="systemTealColor"/>
+                            <connections>
+                                <segue destination="xDX-Cn-sgb" kind="show" id="lrB-pR-zpm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="calendarView" destination="uNH-jm-gXU" id="MaB-Gl-Lbe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P1G-cY-2sE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1878" y="1151"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="j5X-gY-kz5">
+            <objects>
+                <viewController id="xDX-Cn-sgb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8p1-Li-4J2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="VfE-Z4-TVe"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wdw-rt-vnU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="50S-vh-YMA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1878" y="1810"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="6V6-o8-U3T">
@@ -95,7 +130,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <tabBarAppearance key="scrollEdgeAppearance">
-                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" systemColor="systemYellowColor"/>
                         </tabBarAppearance>
                     </tabBar>
                     <connections>
@@ -118,6 +153,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hsY-9K-6aJ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemYellowColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -136,6 +172,15 @@
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
