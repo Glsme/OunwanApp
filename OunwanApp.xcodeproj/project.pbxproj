@@ -17,6 +17,7 @@
 		85052C87283FC50B0075B259 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85052C86283FC50B0075B259 /* VideoViewController.swift */; };
 		85052C89283FC51E0075B259 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85052C88283FC51E0075B259 /* SettingViewController.swift */; };
 		853DD0872842508600B6825A /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853DD0862842508600B6825A /* TabBarViewController.swift */; };
+		854437B828744E5E00E95872 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 854437B728744E5E00E95872 /* FSCalendar */; };
 		85A7B29B2848EC4000175744 /* MemoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A7B29A2848EC4000175744 /* MemoPageViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				854437B828744E5E00E95872 /* FSCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +108,9 @@
 			dependencies = (
 			);
 			name = OunwanApp;
+			packageProductDependencies = (
+				854437B728744E5E00E95872 /* FSCalendar */,
+			);
 			productName = OunwanApp;
 			productReference = 85052C6A283FBB640075B259 /* OunwanApp.app */;
 			productType = "com.apple.product-type.application";
@@ -134,6 +139,9 @@
 				Base,
 			);
 			mainGroup = 85052C61283FBB640075B259;
+			packageReferences = (
+				854437B628744E5E00E95872 /* XCRemoteSwiftPackageReference "FSCalendar" */,
+			);
 			productRefGroup = 85052C6B283FBB640075B259 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -390,6 +398,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		854437B628744E5E00E95872 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		854437B728744E5E00E95872 /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 854437B628744E5E00E95872 /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 85052C62283FBB640075B259 /* Project object */;
 }
