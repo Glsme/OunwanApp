@@ -23,7 +23,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vVC-W4-XEn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-142" y="424"/>
+            <point key="canvasLocation" x="-972" y="424"/>
         </scene>
         <!--Video View Controller-->
         <scene sceneID="PsT-HI-QsQ">
@@ -39,7 +39,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Fz-Ac-Bi3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="822" y="424"/>
+            <point key="canvasLocation" x="-7" y="424"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="axC-jz-avF">
@@ -55,7 +55,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jQy-R0-bxz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1854" y="424"/>
+            <point key="canvasLocation" x="1025" y="424"/>
         </scene>
         <!--Memo View Controller-->
         <scene sceneID="wWQ-ta-lB9">
@@ -65,136 +65,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUp-GL-I6Y">
-                                <rect key="frame" x="0.0" y="94" width="414" height="719"/>
-                                <connections>
-                                    <segue destination="dLS-dM-lN4" kind="embed" identifier="PageVC" id="Dci-pV-wDK"/>
-                                </connections>
-                            </containerView>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ILc-lO-7Ho">
-                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXM-oh-k6K">
-                                        <rect key="frame" x="0.0" y="0.0" width="138" height="50"/>
-                                        <color key="tintColor" systemColor="systemGrayColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="달력"/>
-                                        <connections>
-                                            <action selector="calenderButtonTapped:" destination="NCD-4w-t2A" eventType="touchUpInside" id="LRe-PF-4Hd"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4iF-JS-uoB">
-                                        <rect key="frame" x="138" y="0.0" width="138" height="50"/>
-                                        <color key="tintColor" systemColor="systemGrayColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="운동 메모"/>
-                                        <connections>
-                                            <action selector="exerciseButtonTapped:" destination="NCD-4w-t2A" eventType="touchUpInside" id="VeN-0Q-gmY"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6XW-AF-3Oj">
-                                        <rect key="frame" x="276" y="0.0" width="138" height="50"/>
-                                        <color key="tintColor" systemColor="systemGrayColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="식단 메모"/>
-                                        <connections>
-                                            <action selector="mealButtonTapped:" destination="NCD-4w-t2A" eventType="touchUpInside" id="HvO-da-B0s"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uNH-jm-gXU" customClass="FSCalendar">
+                                <rect key="frame" x="20" y="108" width="374" height="358.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ULw-MN-CN2"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ILc-lO-7Ho" firstAttribute="leading" secondItem="ULw-MN-CN2" secondAttribute="leading" id="1fB-4h-4jM"/>
-                            <constraint firstItem="gUp-GL-I6Y" firstAttribute="leading" secondItem="ULw-MN-CN2" secondAttribute="leading" id="YZS-av-wRe"/>
-                            <constraint firstItem="ILc-lO-7Ho" firstAttribute="top" secondItem="ULw-MN-CN2" secondAttribute="top" id="h6M-b9-Jvx"/>
-                            <constraint firstItem="ULw-MN-CN2" firstAttribute="bottom" secondItem="gUp-GL-I6Y" secondAttribute="bottom" id="jEL-sF-qLs"/>
-                            <constraint firstItem="ILc-lO-7Ho" firstAttribute="centerX" secondItem="YE4-2l-lCQ" secondAttribute="centerX" id="lWO-B1-cLN"/>
-                            <constraint firstItem="ULw-MN-CN2" firstAttribute="trailing" secondItem="gUp-GL-I6Y" secondAttribute="trailing" id="n4X-5X-cI6"/>
-                            <constraint firstItem="ULw-MN-CN2" firstAttribute="trailing" secondItem="ILc-lO-7Ho" secondAttribute="trailing" id="nai-g4-dvs"/>
-                            <constraint firstItem="gUp-GL-I6Y" firstAttribute="top" secondItem="ILc-lO-7Ho" secondAttribute="bottom" id="ooB-Te-wyv"/>
-                            <constraint firstItem="gUp-GL-I6Y" firstAttribute="top" secondItem="ULw-MN-CN2" secondAttribute="top" constant="50" id="x7c-nR-nfj"/>
+                            <constraint firstItem="uNH-jm-gXU" firstAttribute="top" secondItem="ULw-MN-CN2" secondAttribute="top" constant="20" id="KeU-ri-518"/>
+                            <constraint firstItem="uNH-jm-gXU" firstAttribute="height" secondItem="YE4-2l-lCQ" secondAttribute="height" multiplier="0.4" id="KvP-eO-fAU"/>
+                            <constraint firstItem="ULw-MN-CN2" firstAttribute="trailing" secondItem="uNH-jm-gXU" secondAttribute="trailing" constant="20" id="M6f-Xx-2u1"/>
+                            <constraint firstItem="uNH-jm-gXU" firstAttribute="leading" secondItem="ULw-MN-CN2" secondAttribute="leading" constant="20" id="QdC-0p-GuD"/>
+                            <constraint firstItem="uNH-jm-gXU" firstAttribute="centerX" secondItem="YE4-2l-lCQ" secondAttribute="centerX" id="wRt-e7-ikQ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="square.and.pencil" catalog="system" id="Fw6-xb-pyC"/>
-                    <connections>
-                        <outlet property="calenderButton" destination="yXM-oh-k6K" id="Y0P-hd-K1T"/>
-                        <outlet property="exerciseButton" destination="4iF-JS-uoB" id="ysc-da-MD6"/>
-                        <outlet property="mealButton" destination="6XW-AF-3Oj" id="yBr-Dy-K9W"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="eLr-hd-9Qu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P1G-cY-2sE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2218.840579710145" y="423.88392857142856"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="q9Z-nn-wiw">
-            <objects>
-                <viewController storyboardIdentifier="calenderVC" id="w3h-2g-LQc" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Gr7-uj-p89">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qkn-l2-vOH" customClass="FSCalendar">
-                                <rect key="frame" x="57" y="198" width="300" height="500"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="500" id="SI9-xP-Yxz"/>
-                                    <constraint firstAttribute="width" constant="300" id="V3r-dT-1dx"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="GK1-wT-YC5"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
-                        <constraints>
-                            <constraint firstItem="Qkn-l2-vOH" firstAttribute="centerX" secondItem="Gr7-uj-p89" secondAttribute="centerX" id="ew5-ge-uSn"/>
-                            <constraint firstItem="Qkn-l2-vOH" firstAttribute="centerY" secondItem="Gr7-uj-p89" secondAttribute="centerY" id="raS-de-9xe"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fi0-oz-3Cd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-3196" y="1130"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Ssr-Ix-8dP">
-            <objects>
-                <viewController storyboardIdentifier="exerciseMemoVC" id="V9g-yX-Cot" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="67n-0F-ZTG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="jvw-6a-7Vc"/>
-                        <color key="backgroundColor" systemColor="systemMintColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3CL-aF-Erg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2219" y="1130"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="6ij-AX-Uc9">
-            <objects>
-                <viewController storyboardIdentifier="mealMemoVC" id="ZaK-JF-olG" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="LMj-VL-tsU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="DTI-BA-q20"/>
-                        <color key="backgroundColor" systemColor="systemCyanColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nlH-Vm-IhT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1235" y="1130"/>
-        </scene>
-        <!--Memo Page View Controller-->
-        <scene sceneID="I15-8K-fHc">
-            <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="dLS-dM-lN4" customClass="MemoPageViewController" customModule="OunwanApp" customModuleProvider="target" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eP1-pg-5Td" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1232" y="424"/>
+            <point key="canvasLocation" x="-1878" y="1151"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="6V6-o8-U3T">
@@ -209,7 +99,7 @@
                         </tabBarAppearance>
                     </tabBar>
                     <connections>
-                        <segue destination="NCD-4w-t2A" kind="relationship" relationship="viewControllers" id="JIv-xP-V6x"/>
+                        <segue destination="vOp-DC-iAA" kind="relationship" relationship="viewControllers" id="JIv-xP-V6x"/>
                         <segue destination="4cO-Ge-Jrg" kind="relationship" relationship="viewControllers" id="xpO-53-kCs"/>
                         <segue destination="q9V-Zp-nWR" kind="relationship" relationship="viewControllers" id="SvZ-uY-iJJ"/>
                         <segue destination="QAX-1V-lDN" kind="relationship" relationship="viewControllers" id="cnF-Vy-ADO"/>
@@ -219,6 +109,25 @@
             </objects>
             <point key="canvasLocation" x="-819" y="-351"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fQo-3l-0Jm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vOp-DC-iAA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="square.and.pencil" catalog="system" id="Fw6-xb-pyC"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hsY-9K-6aJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NCD-4w-t2A" kind="relationship" relationship="rootViewController" id="zJU-gF-7Ov"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ywU-Ge-a97" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1878.2608695652175" y="423.88392857142856"/>
+        </scene>
     </scenes>
     <resources>
         <image name="gearshape" catalog="system" width="128" height="121"/>
@@ -227,18 +136,6 @@
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemCyanColor">
-            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemMintColor">
-            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
