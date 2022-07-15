@@ -82,6 +82,6 @@ class MemoViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSo
     }
     
     func calendar(_ calendar: FSCalendar, appearance: FSCalendarAppearance, eventOffsetFor date: Date) -> CGPoint {
-        CGPoint(x: 0, y: 3)
+        CGPoint(x: 0, y: 2)
     }
 }
