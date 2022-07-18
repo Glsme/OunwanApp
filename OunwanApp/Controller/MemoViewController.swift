@@ -63,9 +63,9 @@ class MemoViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSo
     }
     
     //미래 날짜 Dimmed
-    func maximumDate(for calendar: FSCalendar) -> Date {
-        return Date()
-    }
+//    func maximumDate(for calendar: FSCalendar) -> Date {
+//        return Date()
+//    }
     
     func calendar(_ calendar: FSCalendar, numberOfEventsFor date: Date) -> Int {
         if self.events.contains(date) {
@@ -82,6 +82,20 @@ class MemoViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSo
     }
     
     func calendar(_ calendar: FSCalendar, appearance: FSCalendarAppearance, eventOffsetFor date: Date) -> CGPoint {
-        CGPoint(x: 0, y: 2)
+        CGPoint(x: 0, y: -1.5)
     }
+}
+
+extension MemoViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "exersiceCell")!
+        
+        return cell
+    }
+    
+    
 }
