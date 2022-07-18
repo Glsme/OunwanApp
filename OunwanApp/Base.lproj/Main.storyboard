@@ -114,7 +114,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="PKT-oA-0Y6">
                             <color key="tintColor" systemColor="systemTealColor"/>
                             <connections>
-                                <segue destination="xDX-Cn-sgb" kind="show" id="lrB-pR-zpm"/>
+                                <segue destination="BTN-gB-8QI" kind="show" id="9dx-yN-GNh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -126,21 +126,34 @@
             </objects>
             <point key="canvasLocation" x="-1878" y="1157"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="j5X-gY-kz5">
+        <!--Adding Exercise Table View Controller-->
+        <scene sceneID="4L6-zE-FEN">
             <objects>
-                <viewController id="xDX-Cn-sgb" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8p1-Li-4J2">
+                <tableViewController id="BTN-gB-8QI" customClass="AddingExerciseTableViewController" customModule="OunwanApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="SPp-Vg-9Ly">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="VfE-Z4-TVe"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="wdw-rt-vnU"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="50S-vh-YMA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="e0d-q0-Rol">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e0d-q0-Rol" id="Wnq-lq-1oH">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="BTN-gB-8QI" id="8Ys-jr-e6c"/>
+                            <outlet property="delegate" destination="BTN-gB-8QI" id="25I-r4-IQB"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="iy2-IE-qH6"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KQR-xk-uLP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1878" y="1898"/>
+            <point key="canvasLocation" x="-1878" y="1900"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="6V6-o8-U3T">
