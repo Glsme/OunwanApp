@@ -6,6 +6,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -66,94 +67,87 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mRH-Rc-nlD" customClass="FSCalendar">
-                                <rect key="frame" x="20" y="108" width="374" height="269"/>
-                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <rect key="frame" x="20" y="64" width="374" height="269"/>
+                                <color key="backgroundColor" red="0.24792395104895104" green="0.90231643356643354" blue="0.75147508741258751" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="eventDefaultColor">
-                                        <color key="value" systemColor="systemYellowColor"/>
+                                        <color key="value" systemColor="systemIndigoColor"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="eventSelectionColor">
                                         <color key="value" systemColor="systemPinkColor"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                            </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dfd-ph-PJe">
-                                <rect key="frame" x="20" y="397" width="374" height="416"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="exersiceCell" id="87e-vc-L4r">
-                                        <rect key="frame" x="0.0" y="44.5" width="374" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="87e-vc-L4r" id="3vA-MR-7ob">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <sections/>
                                 <connections>
-                                    <outlet property="dataSource" destination="NCD-4w-t2A" id="Hjg-Xj-Jwy"/>
-                                    <outlet property="delegate" destination="NCD-4w-t2A" id="rqo-Qs-BtI"/>
+                                    <outlet property="dataSource" destination="NCD-4w-t2A" id="832-FW-uQI"/>
+                                    <outlet property="delegate" destination="NCD-4w-t2A" id="fiS-A9-9hh"/>
                                 </connections>
-                            </tableView>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gkg-6G-pAw">
+                                <rect key="frame" x="186" y="353" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QuK-mc-2hy">
+                                <rect key="frame" x="0.0" y="393.5" width="414" height="419.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="AwY-us-mIt">
+                                    <size key="itemSize" width="341" height="91"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ExerciseCollectionViewCell" id="oBg-VD-gal" customClass="ExerciseCollectionViewCell" customModule="OunwanApp" customModuleProvider="target">
+                                        <rect key="frame" x="36.5" y="0.0" width="341" height="91"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ds9-9h-bH7">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="91"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <size key="customSize" width="341" height="91"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="NCD-4w-t2A" id="QD7-Zh-NBR"/>
+                                    <outlet property="delegate" destination="NCD-4w-t2A" id="xyg-G6-IW8"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ULw-MN-CN2"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="ULw-MN-CN2" firstAttribute="bottom" secondItem="QuK-mc-2hy" secondAttribute="bottom" id="04n-6x-zqi"/>
+                            <constraint firstItem="ULw-MN-CN2" firstAttribute="trailing" secondItem="QuK-mc-2hy" secondAttribute="trailing" id="3u3-6i-aDe"/>
                             <constraint firstItem="mRH-Rc-nlD" firstAttribute="leading" secondItem="ULw-MN-CN2" secondAttribute="leading" constant="20" id="8aH-lU-tJY"/>
-                            <constraint firstItem="dfd-ph-PJe" firstAttribute="leading" secondItem="ULw-MN-CN2" secondAttribute="leading" constant="20" id="ITt-D2-evk"/>
                             <constraint firstItem="mRH-Rc-nlD" firstAttribute="height" secondItem="YE4-2l-lCQ" secondAttribute="height" multiplier="0.3" id="J7q-24-Pg5"/>
-                            <constraint firstItem="dfd-ph-PJe" firstAttribute="top" secondItem="mRH-Rc-nlD" secondAttribute="bottom" constant="20" id="gHW-t8-iBc"/>
-                            <constraint firstItem="ULw-MN-CN2" firstAttribute="trailing" secondItem="dfd-ph-PJe" secondAttribute="trailing" constant="20" id="i17-H9-HsO"/>
+                            <constraint firstItem="QuK-mc-2hy" firstAttribute="top" secondItem="Gkg-6G-pAw" secondAttribute="bottom" constant="20" id="cyE-qs-Bbh"/>
+                            <constraint firstItem="Gkg-6G-pAw" firstAttribute="centerX" secondItem="YE4-2l-lCQ" secondAttribute="centerX" id="hku-uf-KDP"/>
                             <constraint firstItem="mRH-Rc-nlD" firstAttribute="top" secondItem="ULw-MN-CN2" secondAttribute="top" constant="20" id="iSW-Lb-vhy"/>
+                            <constraint firstItem="QuK-mc-2hy" firstAttribute="leading" secondItem="ULw-MN-CN2" secondAttribute="leading" id="ocG-8Z-3jF"/>
                             <constraint firstItem="ULw-MN-CN2" firstAttribute="trailing" secondItem="mRH-Rc-nlD" secondAttribute="trailing" constant="20" id="rQl-wK-ki2"/>
-                            <constraint firstItem="ULw-MN-CN2" firstAttribute="bottom" secondItem="dfd-ph-PJe" secondAttribute="bottom" id="yVQ-L8-lmd"/>
+                            <constraint firstItem="Gkg-6G-pAw" firstAttribute="top" secondItem="mRH-Rc-nlD" secondAttribute="bottom" constant="20" id="tcq-3B-0cf"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="square.and.pencil" catalog="system" id="dUV-xG-pKT"/>
                     <navigationItem key="navigationItem" title="운동 기록" id="eLr-hd-9Qu">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="PKT-oA-0Y6">
                             <color key="tintColor" systemColor="systemTealColor"/>
                             <connections>
-                                <segue destination="BTN-gB-8QI" kind="show" id="9dx-yN-GNh"/>
+                                <action selector="calendarTestButtonClicked:" destination="NCD-4w-t2A" id="S7F-eT-H6b"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="calendarView" destination="mRH-Rc-nlD" id="2na-Qp-3Kb"/>
+                        <outlet property="memoCollectionView" destination="QuK-mc-2hy" id="JkT-LI-vKD"/>
+                        <outlet property="selectDateLabel" destination="Gkg-6G-pAw" id="PVz-5p-M2v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P1G-cY-2sE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1878" y="1157"/>
-        </scene>
-        <!--Adding Exercise Table View Controller-->
-        <scene sceneID="4L6-zE-FEN">
-            <objects>
-                <tableViewController id="BTN-gB-8QI" customClass="AddingExerciseTableViewController" customModule="OunwanApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="SPp-Vg-9Ly">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="e0d-q0-Rol">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e0d-q0-Rol" id="Wnq-lq-1oH">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="BTN-gB-8QI" id="8Ys-jr-e6c"/>
-                            <outlet property="delegate" destination="BTN-gB-8QI" id="25I-r4-IQB"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="iy2-IE-qH6"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KQR-xk-uLP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1878" y="1900"/>
+            <point key="canvasLocation" x="-1955.072463768116" y="423.88392857142856"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="6V6-o8-U3T">
@@ -164,11 +158,11 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <tabBarAppearance key="scrollEdgeAppearance">
-                            <color key="backgroundColor" systemColor="systemYellowColor"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </tabBarAppearance>
                     </tabBar>
                     <connections>
-                        <segue destination="vOp-DC-iAA" kind="relationship" relationship="viewControllers" id="JIv-xP-V6x"/>
+                        <segue destination="NCD-4w-t2A" kind="relationship" relationship="viewControllers" id="uEc-f1-Xt9"/>
                         <segue destination="4cO-Ge-Jrg" kind="relationship" relationship="viewControllers" id="xpO-53-kCs"/>
                         <segue destination="q9V-Zp-nWR" kind="relationship" relationship="viewControllers" id="SvZ-uY-iJJ"/>
                         <segue destination="QAX-1V-lDN" kind="relationship" relationship="viewControllers" id="cnF-Vy-ADO"/>
@@ -177,26 +171,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Dh-N4-92x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-819" y="-351"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="fQo-3l-0Jm">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vOp-DC-iAA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="square.and.pencil" catalog="system" id="Fw6-xb-pyC"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hsY-9K-6aJ">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" systemColor="systemYellowColor"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="NCD-4w-t2A" kind="relationship" relationship="rootViewController" id="zJU-gF-7Ov"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ywU-Ge-a97" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1878.2608695652175" y="423.88392857142856"/>
         </scene>
     </scenes>
     <resources>
@@ -207,17 +181,17 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemMintColor">
-            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
