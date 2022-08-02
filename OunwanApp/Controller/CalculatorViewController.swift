@@ -11,7 +11,7 @@ class CalculatorViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UISetting.backgroundColor
+        view.backgroundColor = .oBackgroundColor
 
         // Do any additional setup after loading the view.
     }

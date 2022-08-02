@@ -16,7 +16,7 @@ class MemoViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSo
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UISetting.backgroundColor
+        view.backgroundColor = .oBackgroundColor
         
         calendarView.delegate = self
         calendarView.dataSource = self
@@ -40,7 +40,7 @@ class MemoViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSo
     }
     
     func setCalendarViewUI() {
-        calendarView.backgroundColor = UISetting.mainColor
+        calendarView.backgroundColor = .oMainColor
         calendarView.layer.cornerRadius = 10
         calendarView.scope = .month
         calendarView.scrollEnabled = true
@@ -53,7 +53,7 @@ class MemoViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSo
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy년 M월 d일"
-        selectDateLabel.text = dateFormatter.string(from: Date())
+        selectDateLabel.text = "\(dateFormatter.string(from: Date()))의 운동 기록"
     }
     
     var events: [Date] = []
@@ -74,7 +74,7 @@ class MemoViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSo
     public func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy년 M월 d일"
-        selectDateLabel.text = dateFormatter.string(from: date)
+        selectDateLabel.text = "\(dateFormatter.string(from: date))의 운동 기록"
     }
     
     //날짜 선택 해제 시 콜백 메서드
@@ -147,7 +147,7 @@ extension MemoViewController: UICollectionViewDelegate, UICollectionViewDataSour
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ExerciseCollectionViewCell.identifier, for: indexPath) as? ExerciseCollectionViewCell else { return UICollectionViewCell() }
         
         cell.layer.cornerRadius = 10
-        cell.backgroundColor = UISetting.mainColor
+        cell.backgroundColor = .oMainColor
         return cell
     }
     
