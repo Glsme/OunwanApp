@@ -14,6 +14,8 @@ class MemoViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSo
     @IBOutlet weak var selectDateLabel: UILabel!
     @IBOutlet weak var memoCollectionView: UICollectionView!
     
+    var exerciseList: [String] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -126,7 +128,7 @@ extension MemoViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        10
+        exerciseList.count + 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

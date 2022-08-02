@@ -19,6 +19,7 @@
 		853DD0872842508600B6825A /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853DD0862842508600B6825A /* TabBarViewController.swift */; };
 		854437B828744E5E00E95872 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 854437B728744E5E00E95872 /* FSCalendar */; };
 		85693D6A289958C700161F2A /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85693D69289958C700161F2A /* UIColor+Extension.swift */; };
+		85693D6D289962ED00161F2A /* AddExerciseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85693D6C289962ED00161F2A /* AddExerciseCollectionViewController.swift */; };
 		85A7B29B2848EC4000175744 /* MemoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A7B29A2848EC4000175744 /* MemoPageViewController.swift */; };
 		85AA2322288554BD00DAB425 /* AddingExerciseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AA2321288554BD00DAB425 /* AddingExerciseTableViewController.swift */; };
 		85F60D3328927EAF0057FDF0 /* UISetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F60D3228927EAF0057FDF0 /* UISetting.swift */; };
@@ -39,6 +40,7 @@
 		85052C88283FC51E0075B259 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		853DD0862842508600B6825A /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		85693D69289958C700161F2A /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		85693D6C289962ED00161F2A /* AddExerciseCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseCollectionViewController.swift; sourceTree = "<group>"; };
 		85A7B29A2848EC4000175744 /* MemoPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoPageViewController.swift; sourceTree = "<group>"; };
 		85AA2321288554BD00DAB425 /* AddingExerciseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingExerciseTableViewController.swift; sourceTree = "<group>"; };
 		85F60D3228927EAF0057FDF0 /* UISetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISetting.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				85F60D432893BAA60057FDF0 /* View */,
 				85052C83283FC45E0075B259 /* Controller */,
 				85052C6D283FBB640075B259 /* AppDelegate.swift */,
+				85693D6C289962ED00161F2A /* AddExerciseCollectionViewController.swift */,
 				85F60D3228927EAF0057FDF0 /* UISetting.swift */,
 				85052C6F283FBB640075B259 /* SceneDelegate.swift */,
 				85052C73283FBB640075B259 /* Main.storyboard */,
@@ -209,6 +212,7 @@
 				85A7B29B2848EC4000175744 /* MemoPageViewController.swift in Sources */,
 				85AA2322288554BD00DAB425 /* AddingExerciseTableViewController.swift in Sources */,
 				85693D6A289958C700161F2A /* UIColor+Extension.swift in Sources */,
+				85693D6D289962ED00161F2A /* AddExerciseCollectionViewController.swift in Sources */,
 				85052C6E283FBB640075B259 /* AppDelegate.swift in Sources */,
 				85F60D3328927EAF0057FDF0 /* UISetting.swift in Sources */,
 				85052C85283FC4BB0075B259 /* CalculatorViewController.swift in Sources */,
