@@ -8,6 +8,8 @@
 import UIKit
 
 class AddExerciseCollectionViewController: UICollectionViewController {
+    
+    static let identifier = String(describing: AddExerciseCollectionViewController.self)
 
     override func viewDidLoad() {
     

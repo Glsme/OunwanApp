@@ -22,6 +22,7 @@
 		85693D6D289962ED00161F2A /* AddExerciseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85693D6C289962ED00161F2A /* AddExerciseCollectionViewController.swift */; };
 		85693D702899640200161F2A /* AddExercise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85693D6F2899640200161F2A /* AddExercise.storyboard */; };
 		85693D722899645E00161F2A /* AddExerciseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85693D712899645E00161F2A /* AddExerciseCollectionViewCell.swift */; };
+		85693D762899687300161F2A /* OunwanStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85693D752899687300161F2A /* OunwanStoryboard.swift */; };
 		85A7B29B2848EC4000175744 /* MemoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A7B29A2848EC4000175744 /* MemoPageViewController.swift */; };
 		85F60D3328927EAF0057FDF0 /* UISetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F60D3228927EAF0057FDF0 /* UISetting.swift */; };
 		85F60D4A2893BB820057FDF0 /* ExerciseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F60D492893BB820057FDF0 /* ExerciseCollectionViewCell.swift */; };
@@ -44,6 +45,7 @@
 		85693D6C289962ED00161F2A /* AddExerciseCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseCollectionViewController.swift; sourceTree = "<group>"; };
 		85693D6F2899640200161F2A /* AddExercise.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddExercise.storyboard; sourceTree = "<group>"; };
 		85693D712899645E00161F2A /* AddExerciseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseCollectionViewCell.swift; sourceTree = "<group>"; };
+		85693D752899687300161F2A /* OunwanStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OunwanStoryboard.swift; sourceTree = "<group>"; };
 		85A7B29A2848EC4000175744 /* MemoPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoPageViewController.swift; sourceTree = "<group>"; };
 		85F60D3228927EAF0057FDF0 /* UISetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISetting.swift; sourceTree = "<group>"; };
 		85F60D492893BB820057FDF0 /* ExerciseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -80,10 +82,12 @@
 		85052C6C283FBB640075B259 /* OunwanApp */ = {
 			isa = PBXGroup;
 			children = (
+				85693D6B289958D000161F2A /* Extension */,
 				85693D6E289963EB00161F2A /* AddExercise */,
 				85F60D432893BAA60057FDF0 /* View */,
 				85052C83283FC45E0075B259 /* Controller */,
 				85052C6D283FBB640075B259 /* AppDelegate.swift */,
+				85693D752899687300161F2A /* OunwanStoryboard.swift */,
 				85F60D3228927EAF0057FDF0 /* UISetting.swift */,
 				85052C6F283FBB640075B259 /* SceneDelegate.swift */,
 				85052C73283FBB640075B259 /* Main.storyboard */,
@@ -121,7 +125,6 @@
 				85693D6F2899640200161F2A /* AddExercise.storyboard */,
 				85693D6C289962ED00161F2A /* AddExerciseCollectionViewController.swift */,
 				85693D712899645E00161F2A /* AddExerciseCollectionViewCell.swift */,
-				85693D6B289958D000161F2A /* Extension */,
 			);
 			path = AddExercise;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				85F60D4A2893BB820057FDF0 /* ExerciseCollectionViewCell.swift in Sources */,
 				85052C87283FC50B0075B259 /* VideoViewController.swift in Sources */,
 				853DD0872842508600B6825A /* TabBarViewController.swift in Sources */,
+				85693D762899687300161F2A /* OunwanStoryboard.swift in Sources */,
 				85693D722899645E00161F2A /* AddExerciseCollectionViewCell.swift in Sources */,
 				85052C70283FBB640075B259 /* SceneDelegate.swift in Sources */,
 				85052C89283FC51E0075B259 /* SettingViewController.swift in Sources */,
