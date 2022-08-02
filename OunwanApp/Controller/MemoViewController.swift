@@ -30,7 +30,11 @@ class MemoViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSo
         setSelectDateLabelUI()
         setCollectionViewUI()
     }
+    
+    @IBAction func addButtonClicked(_ sender: UIButton) {
         
+    }
+    
     @IBAction func calendarTestButtonClicked(_ sender: UIButton) {
         if calendarView.scope == .week {
             self.calendarView.setScope(.month, animated: true)
