@@ -12,7 +12,7 @@ extension UIColor {
     static let oFontColor = UIColor.black
     static let oMainColor = UIColor(
         red: 244/255,
-        green: 240/255,
+        green: 230/255,
         blue: 154/255,
         alpha: 1)
 }

@@ -16,6 +16,8 @@ class MemoViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSo
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        memoCollectionView.backgroundColor = .oBackgroundColor
         view.backgroundColor = .oBackgroundColor
         
         calendarView.delegate = self
@@ -63,9 +65,9 @@ class MemoViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSo
         dateFormatter.locale = Locale(identifier: "ko_KR")
         dateFormatter.dateFormat = "yyyy-MM-dd"
         
-        let firstEvent = dateFormatter.date(from: "2022-07-11")
-        let secondEvent = dateFormatter.date(from: "2022-07-12")
-        let thirdEvent = dateFormatter.date(from: "2022-07-13")
+        let firstEvent = dateFormatter.date(from: "2022-08-11")
+        let secondEvent = dateFormatter.date(from: "2022-08-12")
+        let thirdEvent = dateFormatter.date(from: "2022-08-13")
         
         events = [firstEvent!, secondEvent!, thirdEvent!]
     }
@@ -110,22 +112,6 @@ class MemoViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSo
     }
 }
 
-//extension MemoViewController: UITableViewDelegate, UITableViewDataSource {
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return 10
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "exersiceCell")!
-//
-//        cell.textLabel?.text = "aa"
-//
-//        return cell
-//    }
-//
-//
-//}
-
 extension MemoViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func setCollectionViewUI() {
@@ -134,7 +120,7 @@ extension MemoViewController: UICollectionViewDelegate, UICollectionViewDataSour
         let width = UIScreen.main.bounds.width - spacing * 2
         layout.itemSize = CGSize(width: width, height: UIScreen.main.bounds.height * 0.1)
         layout.scrollDirection = .vertical
-        layout.minimumLineSpacing = 20
+        layout.minimumLineSpacing = 15
         layout.minimumInteritemSpacing = spacing
         memoCollectionView.collectionViewLayout = layout
     }
