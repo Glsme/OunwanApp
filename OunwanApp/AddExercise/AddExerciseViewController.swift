@@ -17,6 +17,8 @@ class AddExerciseViewController: UIViewController {
         selectCollectionView.delegate = self
         selectCollectionView.dataSource = self
         selectCollectionView.register(UINib(nibName: SelectCollectionViewCell.reuseIdentifier, bundle: nil), forCellWithReuseIdentifier: SelectCollectionViewCell.reuseIdentifier)
+        
+        selectCollectionView.collectionViewLayout = setupLayout()
     }
 }
 
@@ -28,9 +30,24 @@ extension AddExerciseViewController: UICollectionViewDelegate, UICollectionViewD
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SelectCollectionViewCell.reuseIdentifier, for: indexPath) as? SelectCollectionViewCell else { return UICollectionViewCell () }
         
-        cell.backgroundColor = .green
+        cell.layer.cornerRadius = 10
+        
+        cell.backgroundColor = .oMainColor
         
         return cell
+    }
+    
+    func setupLayout() -> UICollectionViewFlowLayout {
+        let layout = UICollectionViewFlowLayout()
+        let spacing: CGFloat = 16
+        let width = UIScreen.main.bounds.width - (spacing * 4)
+        layout.itemSize = CGSize(width: width / 3, height: width / 3)
+        layout.scrollDirection = .vertical
+        layout.sectionInset = UIEdgeInsets(top: spacing, left: spacing, bottom: spacing, right: spacing)
+        layout.minimumLineSpacing = spacing
+        layout.minimumInteritemSpacing = spacing
+        
+        return layout
     }
     
     

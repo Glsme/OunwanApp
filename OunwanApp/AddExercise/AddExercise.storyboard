@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="RGa-dR-DwC">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="798"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Qm1-qK-Dm2">
                                     <size key="itemSize" width="128" height="128"/>
@@ -43,7 +43,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="RGa-dR-DwC" firstAttribute="leading" secondItem="cdR-sb-mau" secondAttribute="leading" id="K3e-0V-1I1"/>
-                            <constraint firstItem="RGa-dR-DwC" firstAttribute="top" secondItem="cdR-sb-mau" secondAttribute="top" id="TBY-lI-D7d"/>
+                            <constraint firstItem="RGa-dR-DwC" firstAttribute="top" secondItem="cdR-sb-mau" secondAttribute="top" constant="20" id="TBY-lI-D7d"/>
                             <constraint firstItem="cdR-sb-mau" firstAttribute="trailing" secondItem="RGa-dR-DwC" secondAttribute="trailing" id="bJX-CS-SF6"/>
                             <constraint firstItem="cdR-sb-mau" firstAttribute="bottom" secondItem="RGa-dR-DwC" secondAttribute="bottom" id="dJJ-ch-FPQ"/>
                         </constraints>
