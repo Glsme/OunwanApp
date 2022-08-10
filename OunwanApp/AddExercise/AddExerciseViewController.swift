@@ -24,7 +24,7 @@ class AddExerciseViewController: UIViewController {
 
 extension AddExerciseViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return 18
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -35,6 +35,10 @@ extension AddExerciseViewController: UICollectionViewDelegate, UICollectionViewD
         cell.backgroundColor = .oMainColor
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath.item, indexPath.row, indexPath.section)
     }
     
     func setupLayout() -> UICollectionViewFlowLayout {
