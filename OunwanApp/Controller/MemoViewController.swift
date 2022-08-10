@@ -32,12 +32,13 @@ class MemoViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSo
     }
     
     @IBAction func addButtonClicked(_ sender: UIButton) {
+        print("add button clicked")
         let storyboard = UIStoryboard(name: OunwanStoryboard.AddExercise.rawValue, bundle: nil)
         guard let vc = storyboard.instantiateViewController(withIdentifier: AddExerciseCollectionViewController.identifier) as? AddExerciseCollectionViewController else { return }
-        let naviC = UINavigationController(rootViewController: vc)
         
-        naviC.modalPresentationStyle = .fullScreen
-        self.present(naviC, animated: false)
+        present(vc, animated: true)
+//        self.navigationController?.pushViewController(vc, animated: true)
+        
         
     }
     
