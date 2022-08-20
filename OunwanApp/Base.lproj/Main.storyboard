@@ -24,7 +24,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vVC-W4-XEn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-972" y="424"/>
+            <point key="canvasLocation" x="-62.318840579710148" y="423.88392857142856"/>
         </scene>
         <!--Video View Controller-->
         <scene sceneID="PsT-HI-QsQ">
@@ -40,7 +40,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Fz-Ac-Bi3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7" y="424"/>
+            <point key="canvasLocation" x="902.89855072463774" y="423.88392857142856"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="axC-jz-avF">
@@ -56,9 +56,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jQy-R0-bxz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1025" y="424"/>
+            <point key="canvasLocation" x="1934.7826086956522" y="423.88392857142856"/>
         </scene>
-        <!--운동 기록-->
+        <!--Memo View Controller-->
         <scene sceneID="wWQ-ta-lB9">
             <objects>
                 <viewController id="NCD-4w-t2A" customClass="MemoViewController" customModule="OunwanApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -142,8 +142,7 @@
                             <constraint firstItem="Gkg-6G-pAw" firstAttribute="top" secondItem="mRH-Rc-nlD" secondAttribute="bottom" constant="20" id="tcq-3B-0cf"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="square.and.pencil" catalog="system" id="dUV-xG-pKT"/>
-                    <navigationItem key="navigationItem" title="운동 기록" id="eLr-hd-9Qu">
+                    <navigationItem key="navigationItem" id="eLr-hd-9Qu">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="PKT-oA-0Y6">
                             <color key="tintColor" systemColor="systemTealColor"/>
                             <connections>
@@ -159,7 +158,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P1G-cY-2sE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1955.072463768116" y="423.88392857142856"/>
+            <point key="canvasLocation" x="-1044.9275362318842" y="423.88392857142856"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="6V6-o8-U3T">
@@ -174,7 +173,7 @@
                         </tabBarAppearance>
                     </tabBar>
                     <connections>
-                        <segue destination="NCD-4w-t2A" kind="relationship" relationship="viewControllers" id="uEc-f1-Xt9"/>
+                        <segue destination="MvN-y5-lin" kind="relationship" relationship="viewControllers" id="uEc-f1-Xt9"/>
                         <segue destination="4cO-Ge-Jrg" kind="relationship" relationship="viewControllers" id="xpO-53-kCs"/>
                         <segue destination="q9V-Zp-nWR" kind="relationship" relationship="viewControllers" id="SvZ-uY-iJJ"/>
                         <segue destination="QAX-1V-lDN" kind="relationship" relationship="viewControllers" id="cnF-Vy-ADO"/>
@@ -183,6 +182,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Dh-N4-92x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-819" y="-351"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2Y2-cA-RFp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MvN-y5-lin" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="square.and.pencil" catalog="system" id="dUV-xG-pKT"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Sb0-G5-Gp1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NCD-4w-t2A" kind="relationship" relationship="rootViewController" id="Tuj-il-HUX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oev-Pb-x1Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1955.072463768116" y="423.88392857142856"/>
         </scene>
     </scenes>
     <resources>

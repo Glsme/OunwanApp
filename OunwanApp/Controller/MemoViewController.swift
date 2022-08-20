@@ -25,6 +25,8 @@ class MemoViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSo
         calendarView.delegate = self
         calendarView.dataSource = self
         
+        navigationController?.navigationBar.isHidden = true
+        
         setCalendarViewUI()
         setCalendarEvent()
         setSelectDateLabelUI()
@@ -41,8 +43,8 @@ class MemoViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSo
 //        navc.modalPresentationStyle = .fullScreen
 //        self.navigationController?.pushViewController(vc, animated: true)
                     
-        present(vc, animated: true)
-//        self.navigationController?.pushViewController(vc, animated: true)
+//        present(vc, animated: true)
+        self.navigationController?.pushViewController(vc, animated: true)
         
         
     }

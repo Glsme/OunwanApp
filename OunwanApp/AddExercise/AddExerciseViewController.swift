@@ -19,6 +19,8 @@ class AddExerciseViewController: UIViewController {
         selectCollectionView.register(UINib(nibName: SelectCollectionViewCell.reuseIdentifier, bundle: nil), forCellWithReuseIdentifier: SelectCollectionViewCell.reuseIdentifier)
         
         selectCollectionView.collectionViewLayout = setupLayout()
+        
+        navigationController?.navigationBar.isHidden = false
     }
 }
 
